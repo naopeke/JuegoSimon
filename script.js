@@ -81,7 +81,7 @@ class SimonGame {
 
     //Reset the game. Clear the level, the sequence and the humanSequence
     resetGame() {
-        this.level = 1;
+        this.level = 0;
         this.sequence = [];
         this.humanSequence = [];
     }
@@ -118,6 +118,9 @@ document.getElementById('continue').addEventListener('click', () => {
 
 document.getElementById('reset').addEventListener('click', () => {
     simonGame.resetGame();
+    document.getElementById('commentbox').innerText = '';
+    document.getElementById('continue').style.display = 'none';
+    document.getElementById('level').style.display = 'none';
 });
 
 
