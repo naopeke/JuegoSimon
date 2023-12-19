@@ -59,6 +59,10 @@ class SimonGame {
                 this.humanSequence = [];
                 this.showSequence();
                 document.getElementById('continue').style.display = 'none';
+                console.log('wrong');
+                setTimeout(() => {
+                    document.getElementById('commentbox').innerText = '';
+                }, 1500);
                 return;
             }
         }
@@ -66,6 +70,7 @@ class SimonGame {
         if (this.sequence.length === this.humanSequence.length) {
             document.getElementById('commentbox').innerText = 'CORRECT! Continue to the next level!';
             this.humanSequence = [];
+            console.log('correct');
             // this.nextLevel();
             setTimeout (()=> {
                 // this.nextLevel();
@@ -102,6 +107,10 @@ document.getElementById('start').addEventListener('click', () => {
             simonGame.addHumanSequence(box);
         });
     }
+    setTimeout(() => {
+        document.getElementById('start').style.display = 'none';
+    }, 100);
+
 });
 
 document.getElementById('process').addEventListener('click', () => {
@@ -121,6 +130,7 @@ document.getElementById('reset').addEventListener('click', () => {
     document.getElementById('commentbox').innerText = '';
     document.getElementById('continue').style.display = 'none';
     document.getElementById('level').style.display = 'none';
+    document.getElementById('start').style.display = 'block';
 });
 
 
