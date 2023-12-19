@@ -1,0 +1,103 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden; /* ページ全体のスクロールを無効にします */
+    background-color: #84b6f4;
+}
+
+
+.article{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.article h1{
+    color:white;
+}
+
+.colorbox-wrapper {
+    margin-bottom: 16px;
+}
+
+.colorbox-pair{
+    display: flex;
+    flex-wrap:row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.colorbox{
+    width: 200px;
+    height:200px;
+    border-radius: 10px;
+    /* border:2px solid black; */
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.colorbox:active {
+    filter: brightness(125%);
+    transform: scale(0.9);
+}
+
+.highlight {
+    filter: brightness(200%);
+}
+
+.red {
+    background-color: rgb(189, 61, 11);
+}
+
+.yellow {
+    background-color: rgb(218, 178, 4);
+}
+
+.green {
+    background-color: rgb(8, 114, 8);
+}
+
+.blue {
+    background-color: rgb(18, 18, 179);
+}
+
+#level{
+    width:150px;
+    color: #FFCF96;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#start, #process, #reset{
+    width: 300px;
+    margin-top: 10px;
+    background-color: #fdfd96;
+    color:#84b6f4;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#continue {
+    display:none;
+    width: 300px;
+    margin-top: 10px;
+    background-color: #ffd1dc;
+    color:#84b6f4;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.commentbox{
+    width:300px;
+    height:50px;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+
