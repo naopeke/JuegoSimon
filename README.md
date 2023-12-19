@@ -1,5 +1,7 @@
+![simon](https://github.com/naopeke/Simon-Game/assets/143800388/ccb7614b-5144-4f8f-9254-eb5df7683627)
 
-![simongame](https://github.com/naopeke/Simon-Game/assets/143800388/a022a07f-d401-46ed-8ada-f1982b898653)
+
+
 # Simon Game  
 [Description](#description) | [Technologies](#technologies) | [Installation](#installation) | [How to Play](#how-to-play) | [Author](https://github.com/naopeke)  
   
