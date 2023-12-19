@@ -55,7 +55,7 @@ class SimonGame {
     checkSequence() {
         for (let i = 0; i < this.humanSequence.length; i++) {
             if (this.sequence[i] !== this.humanSequence[i]) {
-                document.getElementById('commentbox').innerText = 'WRONG. Try again!';
+                document.getElementById('commentbox').innerText = 'Ooops. Try again!';
                 this.humanSequence = [];
                 this.showSequence();
                 document.getElementById('continue').style.display = 'none';
